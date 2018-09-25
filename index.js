@@ -38,7 +38,7 @@ function exactMatch(driver,prop){
   
 }
 
-function exactMatchToList(driver,revenue){
+function exactMatchToList(driver,prop){
 let test;
   let m1= driver.filter(function(driver){
     for(let key in prop){
