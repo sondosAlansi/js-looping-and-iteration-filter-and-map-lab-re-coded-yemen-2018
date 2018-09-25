@@ -38,15 +38,13 @@ function exactMatch(driver,prop){
   
 }
 
-function driverNamesWithRevenueOver(driver,revenue){
-
-  let d1= driver.filter(function(driver){
-    
-  
-   
-   return  driver.revenue>revenue;
-      
-      
+function exactMatchToList(driver,revenue){
+let test;
+  let d1=  driver.filter(function(driver){
+    for(let key in prop){
+     test= driver[key]===prop[key];
+    }
+     return test;
     });
     let d2= d1.map(function(d1){
        
